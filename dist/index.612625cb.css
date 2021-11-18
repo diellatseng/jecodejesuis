@@ -1,0 +1,170 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  color: #295D79;
+  text-decoration: none;
+}
+
+html {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 22px;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+footer p {
+  text-align: center;
+}
+
+main {
+  height: 100vh;
+  background-color: black;
+}
+main .container {
+  background-color: green;
+}
+main .banner {
+  background-color: blue;
+}
+
+svg {
+  height: 80vh;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+}
+svg .firstName {
+  font-size: 3rem;
+}
+svg .lastName {
+  font-size: 5rem;
+}
+svg .firstName,
+svg .lastName {
+  transition: 1s all;
+}
+
+@media screen and (min-width: 768px) {
+  svg .firstName {
+    font-size: 6rem;
+    transform: translateY(-5%);
+  }
+  svg .lastName {
+    font-size: 10rem;
+    transform: translateY(5%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  svg .firstName {
+    font-size: 9rem;
+    transform: translateY(-10%);
+  }
+  svg .lastName {
+    font-size: 15rem;
+    transform: translateY(10%);
+  }
+}
+.container {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+/*# sourceMappingURL=index.612625cb.css.map */

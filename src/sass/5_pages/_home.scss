@@ -1,0 +1,55 @@
+main {
+  height: 100vh;
+  background-color: black;
+
+  .container {
+    background-color: green;
+  }
+
+  .banner {
+    background-color: blue;
+  }
+}
+
+svg {
+  height: 80vh;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+
+  .firstName {
+    font-size: 3rem;
+  }
+  .lastName {
+    font-size: 5rem;
+  }
+  .firstName,
+  .lastName {
+    transition: 1s all;
+  }
+}
+
+@include tablet-only {
+  svg {
+    .firstName {
+      font-size: 6rem;
+      transform: translateY(-5%);
+    }
+    .lastName {
+      font-size: 10rem;
+      transform: translateY(5%);
+    }
+  }
+}
+
+@include desktop-only {
+  svg {
+    .firstName {
+      font-size: 9rem;
+      transform: translateY(-10%);
+    }
+    .lastName {
+      font-size: 15rem;
+      transform: translateY(10%);
+    }
+  }
+}
