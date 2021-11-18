@@ -86,44 +86,19 @@ a:active {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 50px;
-  font-family: 'Amatic SC', cursive;
-  color: #295D79;
-}
-
-h2 {
-  font-size: 70px;
-  font-family: 'Zen Loop', cursive;
-  color: rgba(27, 27, 27, 0.7);
-}
-
-footer p {
-  font-size: 12px;
-  color: rgba(27, 27, 27, 0.7);
+html {
+  font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
-  h1 {
-    font-size: 80px;
-  }
-  h2 {
-    font-size: 150px;
-  }
-  footer p {
-    font-size: 17px;
+  html {
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  h1 {
-    font-size: 100px;
-  }
-  h2 {
-    font-size: 170px;
-  }
-  footer p {
-    font-size: 18px;
+  html {
+    font-size: 22px;
   }
 }
 
@@ -141,28 +116,64 @@ footer p {
   text-align: center;
 }
 
-body {
-  background: url(../img/congruent_pentagon.png) repeat;
-}
-
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70vh;
+  height: 100vh;
+  background-color: black;
 }
 
-.banner {
-  text-align: center;
+main .container {
+  background-color: green;
 }
 
-.banner h1 {
-  padding: 50px;
+main .banner {
+  background-color: blue;
+}
+
+svg {
+  height: 80vh;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+svg .firstName {
+  font-size: 3rem;
+}
+
+svg .lastName {
+  font-size: 5rem;
+}
+
+svg .firstName,
+svg .lastName {
+  transition: 1s all;
+}
+
+@media screen and (min-width: 768px) {
+  svg .firstName {
+    font-size: 6rem;
+    transform: translateY(-5%);
+  }
+  svg .lastName {
+    font-size: 10rem;
+    transform: translateY(5%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  svg .firstName {
+    font-size: 9rem;
+    transform: translateY(-10%);
+  }
+  svg .lastName {
+    font-size: 15rem;
+    transform: translateY(10%);
+  }
 }
 
 .container {
   max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
-  padding: 1.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }

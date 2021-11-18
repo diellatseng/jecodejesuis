@@ -1,45 +1,15 @@
-h1 {
-    font-size: 50px;
-    font-family: 'Amatic SC', cursive;
-    color: $primary;
-}
-h2 {
-    font-size: 70px;
-    font-family: 'Zen Loop', cursive;;
-    color: rgba(27, 27, 27, 0.7)
-}
-
-footer {
-    p {
-        font-size: 12px;
-        color: rgba(27, 27, 27, 0.7);
-    }
+html {
+    font-size: 18px;
 }
 
 @include tablet-only {
-    h1 {
-        font-size: 80px;
-    }
-    h2 {
-        font-size: 150px;
-    }
-    footer {
-        p {
-            font-size: 17px;
-        }
+    html {
+        font-size: 20px;
     }
 }
 
 @include desktop-only {
-    h1 {
-        font-size: 100px;
-    }
-    h2 {
-        font-size: 170px;
-    }
-    footer {
-        p {
-            font-size: 18px;
-        }
+    html {
+        font-size: 22px;
     }
 }
