@@ -1,0 +1,48 @@
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  padding: 20px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  li {
+    padding: 10px;
+  }
+}
+
+.home {
+  background-color: mediumslateblue;
+  font-size: 5rem;
+}
+
+.works {
+  background-color: palevioletred;
+}
+
+.contact {
+  background-color: teal;
+}
+
+.container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  scroll-snap-align: start;
+  color: white;
+  font-weight: bold;
+
+}

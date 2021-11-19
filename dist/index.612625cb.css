@@ -76,16 +76,6 @@ th {
   padding: 0;
 }
 
-a,
-a:link,
-a:visited,
-a:focus,
-a:hover,
-a:active {
-  color: #295D79;
-  text-decoration: none;
-}
-
 html {
   font-size: 18px;
 }
@@ -100,73 +90,53 @@ html {
     font-size: 22px;
   }
 }
-footer {
+nav {
   position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-footer p {
-  text-align: center;
-}
-
-header {
-  height: 80vh;
-  background-color: black;
-}
-
-.banner {
-  height: 100%;
-  display: flex;
-}
-
-svg {
-  height: 80vh;
-  position: absolute;
   top: 0;
-  left: 0;
-  font-family: "Work Sans", sans-serif;
-  text-transform: uppercase;
+  right: 0;
+  width: 300px;
+  padding: 20px;
 }
-svg .firstName {
-  font-size: 3rem;
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
-svg .lastName {
+nav li {
+  padding: 10px;
+}
+
+.home {
+  background-color: mediumslateblue;
   font-size: 5rem;
 }
-svg .firstName,
-svg .lastName {
-  transition: 1s all;
+
+.works {
+  background-color: palevioletred;
 }
 
-@media screen and (min-width: 768px) {
-  svg .firstName {
-    font-size: 6rem;
-    transform: translateY(-5%);
-  }
-  svg .lastName {
-    font-size: 10rem;
-    transform: translateY(5%);
-  }
+.contact {
+  background-color: teal;
 }
-@media screen and (min-width: 1024px) {
-  svg .firstName {
-    font-size: 9rem;
-    transform: translateY(-10%);
-  }
-  svg .lastName {
-    font-size: 15rem;
-    transform: translateY(10%);
-  }
-}
+
 .container {
-  max-width: 1400px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  scroll-snap-align: start;
+  color: white;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.612625cb.css.map */
