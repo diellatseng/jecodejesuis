@@ -1,15 +1,22 @@
-html {
+body {
     font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+.monospace {
+    font-family: 'Nova Mono', monospace;
+}
+.bold {
+    font-weight: 700;
 }
 
 @include tablet-only {
-    html {
+    body {
         font-size: 20px;
     }
 }
 
 @include desktop-only {
-    html {
+    body {
         font-size: 22px;
     }
 }
