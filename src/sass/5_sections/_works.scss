@@ -1,0 +1,72 @@
+.works {
+  height: auto;
+  padding: 10rem;
+  flex-direction: column;
+  background-color: black;
+}
+
+.card {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+
+  &__1,
+  &__3,
+  &__5 {
+    right: 15rem;
+  }
+
+  &__2,
+  &__4,
+  &__6 {
+    left: 15rem;
+  }
+
+  &__front,
+  &__back,
+  &__curtain {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+  }
+
+  &__front {
+    border: 5px cadetblue solid;
+    background-color: white;
+    transform: rotateY(0deg);
+    z-index: 2;
+    transition: all 400ms ease-out 500ms;
+  }
+  &__back {
+    background-color: cadetblue;
+    transform: rotateY(180deg);
+    z-index: 1;
+    transition: all 400ms ease-out 500ms;
+  }
+  &__curtain {
+    margin: -2px;
+    background-color: cadetblue;
+    box-shadow: 10px 0 1rem cadetblue;
+    opacity: .2;
+    z-index: 2;
+    transition: all 350ms ease-out;
+  }
+  
+  &:hover &__front {
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+  &:hover &__back {
+    transform: rotateY(0deg);
+    z-index: 2;
+  }
+  &:hover &__curtain {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}

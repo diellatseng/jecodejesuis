@@ -116,12 +116,8 @@ nav li {
 }
 
 .home {
-  background-color: mediumslateblue;
+  background-color: darkslateblue;
   font-size: 5rem;
-}
-
-.works {
-  background-color: palevioletred;
 }
 
 .contact {
@@ -142,6 +138,68 @@ section {
   height: 100vh;
   scroll-snap-align: start;
   color: white;
+}
+
+.works {
+  height: auto;
+  padding: 10rem;
+  flex-direction: column;
+  background-color: black;
+}
+
+.card {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.card__1, .card__3, .card__5 {
+  right: 15rem;
+}
+.card__2, .card__4, .card__6 {
+  left: 15rem;
+}
+.card__front, .card__back, .card__curtain {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+}
+.card__front {
+  border: 5px cadetblue solid;
+  background-color: white;
+  transform: rotateY(0deg);
+  z-index: 2;
+  transition: all 400ms ease-out 500ms;
+}
+.card__back {
+  background-color: cadetblue;
+  transform: rotateY(180deg);
+  z-index: 1;
+  transition: all 400ms ease-out 500ms;
+}
+.card__curtain {
+  margin: -2px;
+  background-color: cadetblue;
+  box-shadow: 10px 0 1rem cadetblue;
+  opacity: 0.2;
+  z-index: 2;
+  transition: all 350ms ease-out;
+}
+.card:hover .card__front {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+.card:hover .card__back {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+.card:hover .card__curtain {
+  transform: translateX(-100%);
+  opacity: 0;
 }
 
 a {
