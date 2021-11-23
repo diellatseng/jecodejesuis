@@ -1,5 +1,5 @@
 body {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Quicksand', sans-serif;
 }
 .monospace {
@@ -11,12 +11,12 @@ body {
 
 @include tablet-only {
     body {
-        font-size: 20px;
+        font-size: 17px;
     }
 }
 
 @include desktop-only {
     body {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
