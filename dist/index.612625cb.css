@@ -86,9 +86,10 @@ body {
 nav {
   position: fixed;
   top: 0;
-  right: 5rem;
+  right: 0;
   width: 300px;
   padding: 20px;
+  color: white;
 }
 nav > ul {
   display: flex;
@@ -109,8 +110,6 @@ nav > ul > li {
 
 .container {
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
@@ -119,33 +118,7 @@ section {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  scroll-snap-align: start;
   color: white;
-}
-
-/* custom scrollbar */
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: black;
-}
-
-::-webkit-scrollbar-track-piece {
-  display: none;
-  background-color: black;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #d6dee1;
-  border-radius: 7px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #a8bbbf;
 }
 
 .works {
@@ -244,7 +217,38 @@ section {
   content: "- ";
 }
 
+* {
+  position: relative;
+}
+
 a {
   text-decoration: none;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-track-piece {
+  display: none;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 7px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  transition: all 100ms ease-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+  background-clip: border-box;
 }
 /*# sourceMappingURL=index.612625cb.css.map */
