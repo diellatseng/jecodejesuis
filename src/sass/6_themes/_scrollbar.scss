@@ -25,11 +25,7 @@
   background-clip: border-box;
 }
 
-/* P1-Reservia*/
+/* 1-Reservia*/
 .card__back--1reservia::-webkit-scrollbar-thumb {
-  background-color: #999999;
-
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: #474747;
-  }
+  background-color: $reservia;
 }

@@ -1,0 +1,79 @@
+.card {
+  width: 20rem;
+  height: 25rem;
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid white;
+
+  &--1reservia,
+  &__3,
+  &__5 {
+    right: 15rem;
+  }
+
+  &--2ohmyfood,
+  &__4,
+  &__6 {
+    left: 15rem;
+  }
+
+  &__front,
+  &__back {
+    position: absolute;
+    right: 0;
+    top: 10rem;
+    width: 20rem;
+    height: 15rem;
+    padding: 1rem;
+  }
+
+  &__front {
+    background-color: white;
+    color: black;
+    transition: opacity 400ms ease-out;
+    opacity: 100;
+    text-align: center;
+
+    & > h2 {
+      margin-top: 0;
+    }
+
+    & > p {
+      color: black;
+    }
+  }
+  &__back {
+    overflow-y: scroll;
+    transition: opacity 400ms ease-out;
+    opacity: 0;
+
+    & > h3 {
+      margin-top: 0;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    height: 10rem;
+    padding: 1.5rem;
+  }
+}
+
+.card:hover {
+  .card__front {
+    opacity: 0;
+  }
+  .card__back {
+    opacity: 100;
+  }
+  .img__reservia,
+  .img__ohmyfood {
+    transform: scale(1) rotate(0);
+  }
+  .img__reservia {
+    background-color: $reservia;
+  }
+}
