@@ -54,7 +54,7 @@
     }
   }
   &__back {
-    // overflow-y: scroll;
+    overflow-y: scroll;
     transition: opacity 400ms ease-out;
     opacity: 0;
 
@@ -94,7 +94,9 @@
 
 .reservia {
   transform: scale(1.3) rotate(-15deg);
-  transition: all 400ms ease-out;
+  transition-property: scale rotate;
+  transition-duration: 400ms;
+  transition-timing-function: ease-out;
 }
 
 .skills {
