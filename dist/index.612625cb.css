@@ -142,11 +142,11 @@ nav > ul > li {
 .card:hover .card__back {
   opacity: 100;
 }
-.card:hover .img__reservia,
-.card:hover .img__ohmyfood {
+.card:hover .logo__reservia,
+.card:hover .logo__ohmyfood {
   transform: scale(1) rotate(0);
 }
-.card:hover .img__reservia {
+.card:hover .logo__reservia {
   background-color: #0065fc;
 }
 .home {
@@ -173,27 +173,6 @@ section {
   flex-direction: column;
   background-color: black;
 }
-.img__reservia {
-  height: 100%;
-  width: 100%;
-  transform: scale(1.3) rotate(-15deg);
-  transition-property: scale rotate background-color;
-  transition-duration: 400ms;
-  transition-timing-function: ease-out;
-  background-color: white;
-  -webkit-mask: url(1reservia.d035c7b7.svg) no-repeat center;
-  mask: url(1reservia.d035c7b7.svg) no-repeat center;
-  -webkit-mask-size: cover;
-  mask-size: cover;
-}
-.img__ohmyfood {
-  height: 100%;
-  width: 100%;
-  transform: scale(1.3) rotate(-15deg);
-  transition-property: scale rotate;
-  transition-duration: 400ms;
-  transition-timing-function: ease-out;
-}
 .skills {
   position: relative;
   margin-left: 10px;
@@ -207,6 +186,29 @@ section {
   position: absolute;
   left: -10px;
   content: "- ";
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  transition-duration: 400ms;
+  transition-timing-function: ease-out;
+  background-color: white;
+}
+.logo__reservia {
+  transform: scale(1.3) rotate(-15deg);
+  transition-property: scale rotate background-color;
+  -webkit-mask: url(1reservia.d035c7b7.svg) no-repeat center;
+  mask: url(1reservia.d035c7b7.svg) no-repeat center;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.logo__ohmyfood {
+  transform: scale(1.4) rotate(5deg);
+  transition-property: scale rotate;
+  -webkit-mask: url(2ohmyfood.22b8d687.svg) no-repeat center;
+  mask: url(2ohmyfood.22b8d687.svg) no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
 * {
   position: relative;

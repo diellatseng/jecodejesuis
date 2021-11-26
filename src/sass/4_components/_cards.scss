@@ -69,11 +69,11 @@
   .card__back {
     opacity: 100;
   }
-  .img__reservia,
-  .img__ohmyfood {
+  .logo__reservia,
+  .logo__ohmyfood {
     transform: scale(1) rotate(0);
   }
-  .img__reservia {
+  .logo__reservia {
     background-color: $reservia;
   }
 }
