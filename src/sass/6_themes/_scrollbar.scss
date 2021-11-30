@@ -25,7 +25,21 @@
   background-clip: border-box;
 }
 
-/* 1-Reservia*/
 .card__back--1reservia::-webkit-scrollbar-thumb {
   background-color: $reservia;
+}
+.card__back--2ohmyfood::-webkit-scrollbar-thumb {
+  background-color: $ohmyfood;
+}
+.card__back--3chouette::-webkit-scrollbar-thumb {
+  background-color: $chouette;
+}
+.card__back--4orinoco::-webkit-scrollbar-thumb {
+  background-color: $orinoco;
+}
+.card__back--5piiquante::-webkit-scrollbar-thumb {
+  background-color: $piiquante;
+}
+.card__back--6groupomania::-webkit-scrollbar-thumb {
+  background-color: $groupomania;
 }

@@ -6,14 +6,14 @@
   border: 1px solid white;
 
   &--1reservia,
-  &__3,
-  &__5 {
+  &--3chouette,
+  &--5piiquante {
     right: 15rem;
   }
 
   &--2ohmyfood,
-  &__4,
-  &__6 {
+  &--4orinoco,
+  &--6groupomania {
     left: 15rem;
   }
 
@@ -59,21 +59,5 @@
     width: 20rem;
     height: 10rem;
     padding: 1.5rem;
-  }
-}
-
-.card:hover {
-  .card__front {
-    opacity: 0;
-  }
-  .card__back {
-    opacity: 100;
-  }
-  .logo__reservia,
-  .logo__ohmyfood {
-    transform: scale(1) rotate(0);
-  }
-  .logo__reservia {
-    background-color: $reservia;
   }
 }

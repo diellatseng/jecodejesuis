@@ -325,7 +325,7 @@
 67D:\Diella\WebDesign\jecodejesuis\node_modules\node-forge\lib\xhr.js132823300187503762 0
 71D:\Diella\WebDesign\jecodejesuis\node_modules\weak-lru-cache\index.d.ts132823300044019927 0
 57D:\Diella\WebDesign\jecodejesuis\src\images\2ohmyfood.svg132823979385369998 0
-64D:\Diella\WebDesign\jecodejesuis\src\sass\5_sections\_works.scss132823982790811635 0
+64D:\Diella\WebDesign\jecodejesuis\src\sass\5_sections\_projects.scss132823982790811635 0
 74D:\Diella\WebDesign\jecodejesuis\node_modules\htmlnano\docs\versioned_docs132823300172215158 1
 70D:\Diella\WebDesign\jecodejesuis\node_modules\postcss\lib\warning.d.ts132823300173479417 0
 64D:\Diella\WebDesign\jecodejesuis\node_modules\reusify\benchmarks132823300044790996 1
@@ -10716,7 +10716,7 @@
 68D:\Diella\WebDesign\jecodejesuis\node_modules\globby\stream-utils.js132823300001192703 0
 66D:\Diella\WebDesign\jecodejesuis\node_modules\globals\globals.json132823299997467077 0
 62D:\Diella\WebDesign\jecodejesuis\node_modules\globals\index.js132823299972437766 0
-79D:\Diella\WebDesign\jecodejesuis\node_modules\generic-names\.idea\workspace.xml132823300080306375 0
+79D:\Diella\WebDesign\jecodejesuis\node_modules\generic-names\.idea\projectspace.xml132823300080306375 0
 61D:\Diella\WebDesign\jecodejesuis\node_modules\globals\license132823299967018812 0
 66D:\Diella\WebDesign\jecodejesuis\node_modules\globals\package.json132823300006494169 0
 70D:\Diella\WebDesign\jecodejesuis\node_modules\glob-parent\package.json132823299991436580 0
