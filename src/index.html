@@ -22,7 +22,7 @@
 
 <body>
     <header>
-        <details>
+        <details data-aos="zoom-in-down" data-aos-delay="500" data-aos-duration="900">
             <summary></summary>
             <nav class="menu">
                 <a class="menu-item" href="#home">Home</a>
@@ -31,51 +31,119 @@
             </nav>
         </details>
     </header>
-
+    
     <div class="container">
         <section class="home monospace" id="home">
             <div class="hero">
-                <h2>Développeur Web</h2>
-                <h1 class="title">Diella Tseng</h1>
-                <p>HTML | CSS | JavaScript | MySQL | API</p>
+                <h2 data-aos="zoom-out-down" data-aos-duration="1100" data-aos-easing="ease-out-cubic">Développeur Web</h2>
+                <h1 data-aos="zoom-out-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic" class="title">Diella Tseng</h1>
+                <p data-aos="zoom-out-right" data-aos-duration="1400"data-aos-easing="ease-out-cubic" >HTML | CSS | JavaScript | MySQL | API</p>
             </div>
         </section>
-
+        
         <section class="projects" id="projects">
-            <div class="card card--1reservia" data-aos="flip-right" data-aos-offset="100" data-aos-delay="0"
+            <div class="card card--groupomania" data-aos="flip-left" data-aos-offset="100" data-aos-delay="0"
                 data-aos-duration="1000" data-aos-easing="ease-out" data-aos-mirror="true" data-aos-once="false"
                 data-aos-anchor-placement="top-bottom">
-                <div class="card__image card__image--1reservia">
-                    <div class="logo logo__1reservia"></div>
+                <div class="card__image card__image--groupomania">
+                    <div class="logo logo__groupomania"></div>
                 </div>
-                <div class="card__front card__front--1reservia">
-                    <h2>Projet 1 : Reservia</h2>
+                <div class="card__front card__front--groupomania">
+                    <h2>Projet 6 : Groupomania</h2>
                     <p>Un outil de planification de vacances</p>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-vuejs"></i>
                 </div>
-                <div class="card__back card__back--1reservia">
+                <div class="card__back card__back--groupomania">
                     <h3>Compétences évaluées</h3>
                     <ul class="skills">
-                        <li>Utiliser un système de gestion de versions pour le suivi du projet et son
-                            hébergement</li>
-                        <li>Mettre en place son environnement Front-End</li>
-                        <li>Intégrer du contenu conformément à une maquette</li>
-                        <li>Implémenter une interface responsive</li>
+                        <li>Authentifier un utilisateur et maintenir sa session</li>
+                        <li>Personnaliser le contenu envoyé à un client web</li>
+                        <li>Gérer un stockage de données à l'aide de SQL</li>
+                        <li>Implémenter un stockage de données sécurisé en utilisant SQL</li>
                     </ul>
-                    <a href="https://reservia.jecodejesuis.com/">Reservia</a>
                 </div>
             </div>
 
-            <div class="card card--2ohmyfood" data-aos="flip-left" data-aos-offset="100" data-aos-delay="0"
-                data-aos-duration="1000" data-aos-easing="ease-out" data-aos-mirror="true" data-aos-once="false"
-                data-aos-anchor-placement="top-bottom">
-                <div class="card__image card__image--2ohmyfood">
-                    <div class="logo logo__2ohmyfood"></div>
+            <div class="card card--piiquante" data-aos="flip-left" data-aos-offset="100" data-aos-delay="0" data-aos-duration="1000"
+                data-aos-easing="ease-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-bottom">
+                <div class="card__image card__image--piiquante">
+                    <div class="logo logo__piiquante"></div>
                 </div>
-                <div class="card__front card__front--2ohmyfood">
+                <div class="card__front card__front--piiquante">
+                    <h2>Projet 5 : Piiquante</h2>
+                    <p>Un outil de planification de vacances</p>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="card__back card__back--piiquante">
+                    <h3>Compétences évaluées</h3>
+                    <ul class="skills">
+                        <li>Implémenter un modèle logique de données conformément à la réglementation</li>
+                        <li>Stocker des données de manière sécurisée</li>
+                        <li>Mettre en œuvre des opérations CRUD de manière sécurisée</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card card--orinoco" data-aos="flip-left" data-aos-offset="100" data-aos-delay="0" data-aos-duration="1000"
+                data-aos-easing="ease-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-bottom">
+                <div class="card__image card__image--orinoco">
+                    <div class="logo logo__orinoco"></div>
+                </div>
+                <div class="card__front card__front--orinoco">
+                    <h2>Projet 4 : Orinoco</h2>
+                    <p>Un outil de planification de vacances</p>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="card__back card__back--orinoco">
+                    <h3>Compétences évaluées</h3>
+                    <ul class="skills">
+                        <li>Créer un plan de test pour une application</li>
+                        <li>Interagir avec un web service avec JavaScript</li>
+                        <li>Valider des données issues de sources externes</li>
+                        <li>Gérer des événements JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card card--chouette" data-aos="flip-left" data-aos-offset="100" data-aos-delay="0" data-aos-duration="1000"
+                data-aos-easing="ease-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-bottom">
+                <div class="card__image card__image--chouette">
+                    <div class="logo logo__chouette"></div>
+                </div>
+                <div class="card__front card__front--chouette">
+                    <h2>Projet 3 : La Chouette Agence</h2>
+                    <p>Un outil de planification de vacances</p>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="card__back card__back--chouette">
+                    <h3>Compétences évaluées</h3>
+                    <ul class="skills">
+                        <li>Réaliser une recherche des bonnes pratiques en développement web</li>
+                        <li>Optimiser la taille et la vitesse d’un site web</li>
+                        <li>Assurer l'accessibilité d'un site web</li>
+                        <li>Écrire un code HTML et CSS maintenable</li>
+                        <li>Optimiser le référencement d'un site web</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card card--ohmyfood" data-aos="flip-left" data-aos-offset="100" data-aos-delay="0" data-aos-duration="1000"
+                data-aos-easing="ease-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-bottom">
+                <div class="card__image card__image--ohmyfood">
+                    <div class="logo logo__ohmyfood"></div>
+                </div>
+                <div class="card__front card__front--ohmyfood">
                     <h2>Projet 2 : OhMyFood!</h2>
                     <p>Un outil de planification de vacances</p>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
                 </div>
-                <div class="card__back card__back--2ohmyfood">
+                <div class="card__back card__back--ohmyfood">
                     <h3>Compétences évaluées</h3>
                     <ul class="skills">
                         <li>Utiliser un système de gestion de versions pour le suivi du projet et son
@@ -88,97 +156,58 @@
                 </div>
             </div>
 
-            <div class="card card--3chouette" data-aos="flip-left" data-aos-offset="100" data-aos-delay="0"
-                data-aos-duration="1000" data-aos-easing="ease-out" data-aos-mirror="true" data-aos-once="false"
-                data-aos-anchor-placement="top-bottom">
-                <div class="card__image card__image--3chouette">
-                    <div class="logo logo__3chouette"></div>
+            <div class="card card--reservia" data-aos="flip-right" data-aos-offset="100" data-aos-delay="0"
+            data-aos-duration="1000" data-aos-easing="ease-out" data-aos-mirror="true" data-aos-once="false"
+            data-aos-anchor-placement="top-bottom">
+            <div class="card__image card__image--reservia">
+                <div class="logo logo__reservia"></div>
                 </div>
-                <div class="card__front card__front--3chouette">
-                    <h2>Projet 3 : La Chouette Agence</h2>
+                <div class="card__front card__front--reservia">
+                    <h2>Projet 1 : Reservia</h2>
                     <p>Un outil de planification de vacances</p>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
                 </div>
-                <div class="card__back card__back--3chouette">
+                <div class="card__back card__back--reservia">
                     <h3>Compétences évaluées</h3>
                     <ul class="skills">
-                        <li>Réaliser une recherche des bonnes pratiques en développement web</li>
-                        <li>Optimiser la taille et la vitesse d’un site web</li>
-                        <li>Assurer l'accessibilité d'un site web</li>
-                        <li>Écrire un code HTML et CSS maintenable</li>
-                        <li>Optimiser le référencement d'un site web</li>
+                        <li>Utiliser un système de gestion de versions pour le suivi du projet et son
+                            hébergement</li>
+                        <li>Mettre en place son environnement Front-End</li>
+                        <li>Intégrer du contenu conformément à une maquette</li>
+                        <li>Implémenter une interface responsive</li>
                     </ul>
+                    <a href="https://reservia.jecodejesuis.com/">Reservia</a>
                 </div>
             </div>
 
-            <div class="card card--4orinoco" data-aos="flip-left" data-aos-offset="100" data-aos-delay="0"
-                data-aos-duration="1000" data-aos-easing="ease-out" data-aos-mirror="true" data-aos-once="false"
-                data-aos-anchor-placement="top-bottom">
-                <div class="card__image card__image--4orinoco">
-                    <div class="logo logo__4orinoco"></div>
-                </div>
-                <div class="card__front card__front--4orinoco">
-                    <h2>Projet 4 : Orinoco</h2>
-                    <p>Un outil de planification de vacances</p>
-                </div>
-                <div class="card__back card__back--4orinoco">
-                    <h3>Compétences évaluées</h3>
-                    <ul class="skills">
-                        <li>Créer un plan de test pour une application</li>
-                        <li>Interagir avec un web service avec JavaScript</li>
-                        <li>Valider des données issues de sources externes</li>
-                        <li>Gérer des événements JavaScript</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card card--5piiquante" data-aos="flip-left" data-aos-offset="100" data-aos-delay="0"
-                data-aos-duration="1000" data-aos-easing="ease-out" data-aos-mirror="true" data-aos-once="false"
-                data-aos-anchor-placement="top-bottom">
-                <div class="card__image card__image--5piiquante">
-                    <div class="logo logo__5piiquante"></div>
-                </div>
-                <div class="card__front card__front--5piiquante">
-                    <h2>Projet 5 : Piiquante</h2>
-                    <p>Un outil de planification de vacances</p>
-                </div>
-                <div class="card__back card__back--5piiquante">
-                    <h3>Compétences évaluées</h3>
-                    <ul class="skills">
-                        <li>Implémenter un modèle logique de données conformément à la réglementation</li>
-                        <li>Stocker des données de manière sécurisée</li>
-                        <li>Mettre en œuvre des opérations CRUD de manière sécurisée</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card card--6groupomania" data-aos="flip-left" data-aos-offset="100" data-aos-delay="0"
-                data-aos-duration="1000" data-aos-easing="ease-out" data-aos-mirror="true" data-aos-once="false"
-                data-aos-anchor-placement="top-bottom">
-                <div class="card__image card__image--6groupomania">
-                    <div class="logo logo__6groupomania"></div>
-                </div>
-                <div class="card__front card__front--6groupomania">
-                    <h2>Projet 6 : Groupomania</h2>
-                    <p>Un outil de planification de vacances</p>
-                </div>
-                <div class="card__back card__back--6groupomania">
-                    <h3>Compétences évaluées</h3>
-                    <ul class="skills">
-                        <li>Authentifier un utilisateur et maintenir sa session</li>
-                        <li>Personnaliser le contenu envoyé à un client web</li>
-                        <li>Gérer un stockage de données à l'aide de SQL</li>
-                        <li>Implémenter un stockage de données sécurisé en utilisant SQL</li>
-                    </ul>
-                </div>
-            </div>
         </section>
 
         <section class="contact" id="contact">
-            <div>
-                <p>Email: hi@jecodejesuis.com</p>
-                <p>Git hub：https://github.com/diellatseng</p>
-                <a href="https://www.linkedin.com/in/diellatseng/">Linked In</a>
-                <a href="https://www.codingame.com/profile/e8bfee507598149b2e9d649f1c7ad15c2662634">Codingame</a>
+            <div class="grid-items">
+                <a data-aos="zoom-out" data-aos-delay="50" class="grid-item grid-item__mail"
+                    href="mailto:hi@jecodejesuis.com">
+                    <span class="back fa-regular fa-envelope"></span>
+                </a>
+                <a data-aos="zoom-out" data-aos-delay="150" class="grid-item grid-item__cv"
+                    href="./files/TSENG_Ching-Yao_Développeur_Web_Resume_29-11-2021.pdf" download>
+                    <span class="back fa-regular fa-file-pdf"></span>
+                </a>
+                <a data-aos="zoom-out" data-aos-delay="250" class="grid-item grid-item__grid-itemedin"
+                    href="https://www.linkedin.com/in/diellatseng/">
+                    <span class="front fa-brands fa-linkedin-in"></span>
+                </a>
+                <a data-aos="zoom-out" data-aos-delay="350" class="grid-item grid-item__github"
+                    href="https://github.com/diellatseng">
+                    <span class="front fa-brands fa-github"></span>
+                </a>
+                <a data-aos="zoom-out" data-aos-delay="450" class="grid-item grid-item__codingame"
+                    href="https://www.codingame.com/profile/e8bfee507598149b2e9d649f1c7ad15c2662634">
+                    <div class="front">
+                        <img src="./images/icons/codingame.svg" alt="Logo of codingame">
+                    </div>
+                </a>
+
             </div>
         </section>
     </div>

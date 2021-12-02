@@ -19,7 +19,7 @@ summary {
   transition: transform 200ms ease-out;
 
   &::before {
-    content: url(../images/bars-solid.svg);
+    content: url(../images/icons/bars-solid.svg);
     color: white;
     margin: -17px -20px;
     position: absolute;
@@ -84,16 +84,14 @@ details[open] {
   }
 
   & summary {
-
     &::before {
-      content: url(../images/xmark-solid.svg);
+      content: url(../images/icons/xmark-solid.svg);
     }
     &::after {
       transform: translate3d(-3px, -3px, -1em);
     }
   }
 }
-
 
 @keyframes open {
   to {
