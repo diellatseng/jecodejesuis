@@ -53,15 +53,10 @@
 
 @include desktop-only {
   .card {
-    &--1reservia,
-    &--3chouette,
-    &--5piiquante {
+    &:nth-child(odd) {
       right: 15rem;
     }
-
-    &--2ohmyfood,
-    &--4orinoco,
-    &--6groupomania {
+    &:nth-child(even) {
       left: 15rem;
     }
   }
