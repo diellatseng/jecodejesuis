@@ -72,20 +72,97 @@ body {
     font-size: 18px;
   }
 }
-nav {
+details {
+  z-index: 5;
   position: fixed;
   top: 0;
+  left: 0;
+  margin: 1.5rem 2rem;
+}
+summary {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #1c4053;
+  border-radius: 5px;
+  font-size: 2rem;
+  list-style: none;
+  writing-mode: vertical-lr;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 200ms ease-out;
+}
+summary::before {
+  content: url(bars-solid.128c69bf.svg);
+  color: white;
+  margin: -17px -20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+summary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   right: 0;
-  width: 300px;
-  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #234e66;
+  border: 3px solid #234e66;
+  border-radius: 5px;
+  transform: translate3d(10px, 10px, -1em);
+  transition: transform 200ms ease-out;
+}
+summary:hover {
+  transform: scale(1.1);
+}
+summary:hover::after {
+  transform: translate3d(-3px, -3px, -1em);
+}
+summary:active::after {
+  transform: translate3d(-3px, -3px, -1em);
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7rem;
+  text-align: center;
+}
+details[open] .menu-item {
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  animation-name: open;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  opacity: 0;
+  border-radius: 5px;
+  border: 3px solid #1c4053;
   color: white;
 }
-nav > ul {
-  display: flex;
-  justify-content: space-between;
+details[open] .menu-item:nth-child(1) {
+  animation-delay: 0ms;
 }
-nav > ul > li {
-  padding: 0.5rem 1.5rem;
+details[open] .menu-item:nth-child(2) {
+  animation-delay: 150ms;
+}
+details[open] .menu-item:nth-child(3) {
+  animation-delay: 300ms;
+}
+details[open] .menu-item:hover {
+  background-color: #234e66;
+}
+details[open] summary::before {
+  content: url(xmark-solid.45ae9d0d.svg);
+}
+details[open] summary::after {
+  transform: translate3d(-3px, -3px, -1em);
+}
+@keyframes open {
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
 }
 .card {
   width: 20rem;
@@ -93,19 +170,9 @@ nav > ul > li {
   position: relative;
   border-radius: 2px;
   border: 1px solid white;
+  margin: 8rem 0;
 }
-.card--1reservia,
-.card--3chouette,
-.card--5piiquante {
-  right: 15rem;
-}
-.card--2ohmyfood,
-.card--4orinoco,
-.card--6groupomania {
-  left: 15rem;
-}
-.card__front,
-.card__back {
+.card__front, .card__back {
   position: absolute;
   right: 0;
   top: 10rem;
@@ -142,16 +209,16 @@ nav > ul > li {
   height: 10rem;
   padding: 1.5rem;
 }
-.home {
-  background-color: darkslateblue;
-  font-size: 5rem;
+@media screen and (min-width: 1024px) {
+  .card--1reservia, .card--3chouette, .card--5piiquante {
+    right: 15rem;
+  }
+  .card--2ohmyfood, .card--4orinoco, .card--6groupomania {
+    left: 15rem;
+  }
 }
 .contact {
   background-color: teal;
-}
-.container {
-  height: 100vh;
-  scroll-behavior: smooth;
 }
 section {
   display: flex;
@@ -159,6 +226,22 @@ section {
   align-items: center;
   height: 100vh;
   color: white;
+}
+.container {
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+.home {
+  background-color: #295d79;
+}
+.hero {
+  padding: 2rem;
+}
+.title {
+  font-size: 4rem;
+}
+h1 {
+  margin-top: 0;
 }
 .projects {
   height: auto;
@@ -275,6 +358,9 @@ a {
 body {
   overflow: overlay;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* custom scrollbar */
 ::-webkit-scrollbar {
   width: 1em;
@@ -296,6 +382,7 @@ body {
   background-color: #00dd5c;
   background-clip: border-box;
 }
+/*Custom scrollbar colors for each project card*/
 .card__back--1reservia::-webkit-scrollbar-thumb {
   background-color: #0065fc;
 }

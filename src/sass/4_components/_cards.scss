@@ -4,18 +4,7 @@
   position: relative;
   border-radius: 2px;
   border: 1px solid white;
-
-  &--1reservia,
-  &--3chouette,
-  &--5piiquante {
-    right: 15rem;
-  }
-
-  &--2ohmyfood,
-  &--4orinoco,
-  &--6groupomania {
-    left: 15rem;
-  }
+  margin: 8rem 0;
 
   &__front,
   &__back {
@@ -59,5 +48,21 @@
     width: 20rem;
     height: 10rem;
     padding: 1.5rem;
+  }
+}
+
+@include desktop-only {
+  .card {
+    &--1reservia,
+    &--3chouette,
+    &--5piiquante {
+      right: 15rem;
+    }
+
+    &--2ohmyfood,
+    &--4orinoco,
+    &--6groupomania {
+      left: 15rem;
+    }
   }
 }
