@@ -2,10 +2,12 @@
   "name": "jecodejesuis",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "source": "src/index.html",
   "scripts": {
-    "dev": "npx parcel src/index.html"
+    "start": "parcel",
+    "build": "parcel build"
   },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/diellatseng/jecodejesuis.git"
