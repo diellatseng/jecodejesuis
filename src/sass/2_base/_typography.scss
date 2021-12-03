@@ -1,0 +1,22 @@
+body {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+.monospace {
+    font-family: 'Nova Mono', monospace;
+}
+.bold {
+    font-weight: 700;
+}
+
+@include tablet-only {
+    body {
+        font-size: 17px;
+    }
+}
+
+@include desktop-only {
+    body {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,28 @@
+@import "1_abstracts/colors";
+@import "1_abstracts/variables";
+@import "1_abstracts/functions";
+@import "1_abstracts/mixins";
+@import "1_abstracts/breakpoints";
+
+@import "2_base/reset";
+@import "2_base/typography";
+
+@import "../fontawesome6/scss/fontawesome.scss";
+@import "../fontawesome6/scss/solid.scss";
+@import "../fontawesome6/scss/brands.scss";
+@import "../fontawesome6/scss/regular.scss";
+
+@import "3_layout/header";
+@import "3_layout/footer";
+
+@import "4_components/buttons";
+@import "4_components/cards";
+
+@import "5_sections/contact";
+@import "5_sections/home";
+@import "5_sections/projects";
+
+@import "6_themes/basic";
+@import "6_themes/scrollbar";
+@import "6_themes/aos";
+

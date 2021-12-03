@@ -1,0 +1,30 @@
+{
+  "name": "jecodejesuis",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diellatseng/jecodejesuis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diellatseng/jecodejesuis/issues"
+  },
+  "homepage": "https://github.com/diellatseng/jecodejesuis#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "^2.0.1",
+    "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  }
+}
