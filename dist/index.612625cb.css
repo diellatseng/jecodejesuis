@@ -6886,7 +6886,7 @@ details[open] summary::after {
   width: 20rem;
   height: 25rem;
   position: relative;
-  border-radius: 2px;
+  border-radius: 5px;
   border: 1px solid white;
   margin: 8rem 0;
 }
@@ -6962,7 +6962,7 @@ details[open] summary::after {
   color: white;
   font-size: 2rem;
   border: 3px solid white;
-  border-radius: 3px;
+  border-radius: 5px;
   transition-property: background-color transform;
   transition: 200ms ease-out;
 }
@@ -7059,6 +7059,25 @@ h1 {
   padding: 10rem;
   flex-direction: column;
   background-color: #252525;
+}
+.projects h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.tech-icons {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.express-text {
+  transform: scaleY(1.1);
+  margin-right: -1rem;
 }
 .skills {
   position: relative;
@@ -7184,7 +7203,7 @@ html {
 }
 ::-webkit-scrollbar-thumb {
   background-color: #bbbbbb;
-  border-radius: 7px;
+  border-radius: 1rem;
   border: 6px solid transparent;
   background-clip: content-box;
   transition: all 100ms ease;

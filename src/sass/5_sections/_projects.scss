@@ -3,6 +3,27 @@
   padding: 10rem;
   flex-direction: column;
   background-color: #252525;
+
+  & h3 {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.tech-icons {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.express-text {
+  transform: scaleY(1.1);
+  margin-right: -1rem;
 }
 
 .skills {
