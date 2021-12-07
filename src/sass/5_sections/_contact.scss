@@ -4,10 +4,10 @@
 
 .grid-items {
   display: grid;
-  grid-template-columns: repeat(3, 90px);
-  grid-template-rows: repeat(3, 90px);
-  column-gap: 30px;
-  row-gap: 30px;
+  grid-template-columns: repeat(3, 70px);
+  grid-template-rows: repeat(3, 70px);
+  column-gap: 10px;
+  row-gap: 10px;
   font-weight: bold;
 }
 
@@ -116,5 +116,14 @@
   100% {
     text-shadow: 0 0 1px #fff;
     transform: scale(1);
+  }
+}
+
+@include desktop-only {
+  .grid-items {
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 90px);
+    column-gap: 30px;
+    row-gap: 30px;
   }
 }

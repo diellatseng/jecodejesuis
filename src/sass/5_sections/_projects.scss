@@ -68,8 +68,8 @@
   }
 
   &__chouette {
-    transform: scale(2);
-    transition-property: scale rotate mask;
+    transform: scale(1.2);
+    transition-property: scale mask;
     -webkit-mask: url(../images/chouette-logo.svg) no-repeat center;
     mask: url(../images/chouette-logo.svg) no-repeat center;
     -webkit-mask-size: contain;

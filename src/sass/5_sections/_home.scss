@@ -15,9 +15,18 @@ section {
 .hero {
   padding: 2rem;
 }
-.title {
-  font-size: 4rem;
-}
 h1 {
+  font-size: 3rem;
   margin-top: 0;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+@include desktop-only {
+  .title {
+    font-size: 4rem;
+  }
 }
