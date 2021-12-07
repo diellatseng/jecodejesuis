@@ -1,0 +1,20 @@
+.btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.164);
+  opacity: 0.5;
+  transition-property: opacity transform background-color;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    background-color: darken($primary, 10%);
+  }
+}
