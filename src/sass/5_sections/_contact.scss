@@ -1,6 +1,6 @@
 .contact {
   height: 100vh;
-  background-color: #977764;
+  background-color: $color-contact;
 }
 
 .grid-items {
@@ -36,7 +36,7 @@
 
   &:hover {
     transform: scale(1.05);
-    background-color: $primary;
+    background-color: $color-primary;
   }
 
   &__mail {

@@ -2,10 +2,10 @@
   height: auto;
   padding: 10rem;
   flex-direction: column;
-  background-color: #252525;
+  background-color: $color-project;
 
   & h3 {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
 }

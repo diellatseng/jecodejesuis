@@ -15,6 +15,6 @@
   &:hover {
     opacity: 1;
     transform: scale(1.05);
-    background-color: darken($primary, 10%);
+    background-color: darken($color-primary, 10%);
   }
 }
